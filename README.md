@@ -21,7 +21,7 @@ The function with parameters
 show_alert(title, message, btnHide = false, btnLabel = "Close")
 ```
 
-Example with a custom text lanel for the close button
+Example with a custom text label for the close button
 ```javascript
 show_alert('Custom close button', 'Close button with custom text label.', false, 'Ok')
 ```
