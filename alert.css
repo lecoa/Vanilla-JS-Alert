@@ -43,7 +43,6 @@
     line-height: 1.25;
     color: var(--text-color);
     box-sizing: border-box;
-    font-family: sans-serif;
   }
   .modal-icon {
     height: 45px;
