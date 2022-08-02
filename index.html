@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS Alert</title>
+    <link rel="stylesheet" type="text/css" href="./alert.css">
+</head>
+<body>
+<h1 id="demo-heading">Vanilla JS Alert modals</h1>
+<p>Simple function with endless possibilities.</p>
+<h2>Default close button</h2>
+<button onclick="show_alert('Default close button', 'Just a simple close button.')">Test default close button</button><br><br>
+<code>show_alert('Default close button', 'Just a simple close button.')</code>
+<h2>Custom close button</h2>
+<button onclick="show_alert('Custom close button', 'Close button with custom text label.', false, 'Ok')">Test custom close button</button><br><br>
+<code>show_alert('Custom close button', 'Close button with custom text label.', false, 'Ok')</code>
+<h2>No close button</h2>
+<button onclick="show_alert('No close button', 'No way to close alert, refresh tab.', true)">Test no close button</button><br><br>
+<code>show_alert('No close button', 'No way to close alert, refresh tab.', true)</code>
+<h2>The full function to call</h2>
+<code>
+    show_alert(title, message, btnHide = false, btnLabel = "Close")
+</code>
+
+    <div class="modal" id="modal-alert">
+        <div class="modal-overlay" tabindex="-1">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal-alert-title">
+                        Error
+                    </h2>
+                </div>
+                <div class="modal-text">
+                    <p id="modal-alert-content">
+                        Something went wrong.
+                    </p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-button" id="modal-button-primary" onclick="document.getElementById('modal-alert').style.display = 'none';">Close</button>
+                    <button class="modal-button" id="modal-button-secondary" onclick=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./alert.js"></script>
+</body>
+</html>
